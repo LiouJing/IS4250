@@ -56,9 +56,5 @@ for(i in 1:50){
 
 # use logit model to determine which factors are significanlt important
 mylogit <- glm(choice ~ rTreatment + rInvolvement + rCareprog + rOutcome + rPharma + rGovernance, data = mydata, family = "binomial")
-```
-
-```{r, echo=FALSE}
 summary(mylogit)
 ```
-
